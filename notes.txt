@@ -1,0 +1,64 @@
+r13 sp stack pointer
+r14 lp link pointer have de return address
+r15 pc program couter, contains the instruccion we have executed
+
+memory with 32 bit instructions nad 4 gib memory space
+
+cortex-m memory have 3 sectons in the first 1.5 gib space
+peripheral
+
+-pude llevar memoria externa y perifericos externos
+
+1fffffff
+
+0x3fffff ram
+
+0x200000 termina
+
+el ultimo bloque de memoria, datos para el sistk y lector de interuppcione y debug.
+
+arquitectra harvard
+
+todas las direcciones son de 32 bit
+
+registro-registro aquitectura
+
+8 bloques de memoriavendo specifica
+external device
+external device
+external ram
+externarl ram
+peripherial 0x4fffffff a 0x5fffffff
+sram de 0x2fffffff a 0x3fffffff
+code de 0xffffffff a 0x1fffffff
+
+de 0x00000000 a 0xffffffff
+
+
+arm cortex m move instructions
+
+
+opcode destreg operand 2, that means you can usa 2 operand or 3
+
+opcode  destreg, srcreg,operand2    dest a operand can be from r0 to r12, 
+puedes poner un valor inmediat, un registro o un registro con desplazam,iento en operand2
+
+all the instrucion can be conditional(pueden ser condicionales, activando o no banderas)
+
+operand2 is a flexible operand
+
+
+move r0, #0x11    el valor numero constante se utiliza el #
+|sin el 0x obtendremos un warning #3440
+
+move convierte el valor a binario y lo muestra en exadecimal(mvn) move de gala
+
+modificador para movw, r3, #0xC0DE   mueve los 16 bit bajos
+
+movet mueve los bits altos, los primeros desopues de la 0x
+ mover valores entre registros
+
+ basic load/store instruccions, ldr mueve de memoria a egistros simpre usando punteros. 
+ ldr r5, [r1]
+
+
