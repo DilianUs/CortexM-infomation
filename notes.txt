@@ -62,3 +62,16 @@ movet mueve los bits altos, los primeros desopues de la 0x
  ldr r5, [r1]
 
 
+systax
+
+op(s)(cond) (Rd) Rn, operand2
+op(cond) (Rd) Rn, operand2    ;ADD and SUB onsly
+
+
+where op is and operation: ADD,
+
+
+Condition code sufflexes:  pag 55, 33
+
+flexible second operand page 27
+
