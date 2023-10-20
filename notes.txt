@@ -75,3 +75,14 @@ Condition code sufflexes:  pag 55, 33
 
 flexible second operand page 27
 
+-------------------------------------
+load/store instructions
+
+ldr r5, [r1]
+memoria a registro ldr, de registro a memoria con str
+ponemos obtener el valor de lo que apunta la direccion del registro, si queremos copiar el valor se utiliza STR
+lo que hay en un registro lo pasamos a otro, a diferencia de ldr, que lo que hace es obtenerlo a travez de una direccion
+
+ldr r5, [r1,4] indirecto con desplazamiento ya que al registro le sumamos un valor entero que es el desplazamiento
+
+
